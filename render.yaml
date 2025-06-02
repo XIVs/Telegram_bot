@@ -1,11 +1,12 @@
 services:
   - type: web
-    name: telegram-vinyl-bot
+    name: vinylize-bot
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
-    autoDeploy: true
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python bot.py
     envVars:
       - key: TELEGRAM_TOKEN
         value: 7525280272:AAFaNrf7YilPJnJRvpD1lfqstW8jkt8WCOY

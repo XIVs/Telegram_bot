@@ -1,2 +1,4 @@
 # config.py
-TELEGRAM_TOKEN = "7525280272:AAFaNrf7YilPJnJRvpD1lfqstW8jkt8WCOY"
+import os
+
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
