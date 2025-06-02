@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-bot
+    runtime: python
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    autoDeploy: true
+    plan: free
+    region: oregon
