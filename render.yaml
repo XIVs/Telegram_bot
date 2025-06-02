@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-vinyl-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 7525280272:AAFaNrf7YilPJnJRvpD1lfqstW8jkt8WCOY
