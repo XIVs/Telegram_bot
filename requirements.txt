@@ -1,6 +1,8 @@
 python-telegram-bot==13.15
 pydub
 numpy
-moviepy
+moviepy==1.0.3
 Pillow
 ffmpeg-python
+imageio
+imageio-ffmpeg
